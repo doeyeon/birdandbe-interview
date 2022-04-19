@@ -62,13 +62,13 @@ export function ProductItems() {
 
         <Item>
             <div className='heading_one'>
-                {Product.products[0].name}
+                <h3>{Product.products[0].name}</h3>
             </div>
             <div className='heading_two'>
-                {eggs_header}
+                <h4>{eggs_header}</h4>
             </div>
             <div className='heading_three'>
-                {eggs_description}
+                <p>{eggs_description}</p>
             </div>
             <img src={egg_img}></img>
             <CheckBoxCart item={Product.products[0]} handleChange={handleChange}/>
@@ -78,13 +78,13 @@ export function ProductItems() {
 
         <Item>
             <div className='heading_one'>
-                {Product.products[1].name}
+                <h3>{Product.products[1].name}</h3>
             </div>
             <div className='heading_two'>
-                {sperm_header}
+                <h4>{sperm_header}</h4>
             </div>
             <div className='heading_three'>
-                {sperm_description}
+                <p>{sperm_description}</p>
             </div>
             <img src={sperm_img}></img>
             <CheckBoxCart item={Product.products[1]} handleChange={handleChange}/>
@@ -92,7 +92,7 @@ export function ProductItems() {
       </Stack>
       
       <div className='total-cost'>
-          Order Total: ${totalCost} USD
+          <p>Order Total: ${totalCost} USD</p>
         </div>
 
     </div>

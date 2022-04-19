@@ -11,7 +11,7 @@ const CheckBoxCart = ({ item, handleChange }) => {
       />
       Add to Cart
       <div className="price">
-        ${item.price}
+        <p>${item.price}</p>
       </div>
     </div>
   );
